@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  ganache-cli:
+    image: trufflesuite/ganache-cli:latest
+    volumes:
+      - ./ganache_data:/ganache_data
+    ports:
+      - 8545:8545
+    entrypoint:
+      - node
+      - /app/ganache-core.docker.cli.js
+      - --deterministic
+      - --db=/ganache_data
+      - --mnemonic
+      - 'comic control grain goat donate cereal sugar elevator quality limit link soup'
+      - --accounts=2
+
+        #  truffle-drizzle:
+        #    container_name: truffle-dirzzle
+        #    build:
+        #      context: truffledrizzle
+        #    ports:
+        #      - 3000:3000
+        #    networks:
+        #      - lfs261
+        #    tty: true
+        #    restart: always
+        #    volumes:
+        #      - ./truffledrizzle/client/src:/cient/src
+        #    depends_on:
+        #      - docker
