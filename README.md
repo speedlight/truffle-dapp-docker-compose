@@ -17,7 +17,7 @@ docker-compose up -d
 ```
 
 ### Modifying the dapp
-The smart contract code as well is under the `truffle-dapp` folder and the frontend is in the `client` folder under the `truffle-dapp` folder. 
+The smart contract code is under the `truffle-dapp` folder and the frontend is in the `client` folder under the `truffle-dapp` folder. 
 
 Edition for the client could be done in the host and the dapp is using lite-server so every change saved in the code will reload the dapp.
 

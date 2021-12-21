@@ -1,2 +1,3 @@
 ganache_data
-node_modules
+truffle-dapp/node_modules/
+truffle-dapp/build

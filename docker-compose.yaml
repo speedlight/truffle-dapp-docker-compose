@@ -30,6 +30,6 @@ services:
              npx truffle migrate &&
              npm run dev"
     volumes:
-      - ./truffle-dapp/client:/client
+      - ./truffle-dapp:/app
     depends_on:
       - ganache-cli
