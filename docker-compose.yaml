@@ -33,3 +33,5 @@ services:
       - ./truffle-dapp:/app
     depends_on:
       - ganache-cli
+    links:
+      - ganache-cli:ganache-cli
