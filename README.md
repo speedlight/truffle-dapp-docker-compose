@@ -26,4 +26,7 @@ Edition of the smart contract is also done in the host and as they need to be co
 docker-compose restart
 ```
 
-> Could be usefull to have `docker-compose logs -f` running on another terminal to see the output of the smart contracts recompiling and tests. 
+> Could be useful to have `docker-compose logs -f` running on another terminal to see the output of the smart contracts recompiling and tests. 
+
+### Development CI Pipeline
+For convenience there is a Jenkinsfile that automate this process so we can have a CI pipeline locally in a Jenkins container.
